@@ -90,7 +90,6 @@ namespace Microsoft.eShopWeb.Web
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IBasketViewModelService, BasketViewModelService>();
             services.AddScoped<IOrderService, OrderService>();
-            services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<CatalogService>();
             services.Configure<CatalogSettings>(Configuration);
             services.AddSingleton<IUriComposer>(new UriComposer(Configuration.Get<CatalogSettings>()));

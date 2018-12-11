@@ -14,9 +14,9 @@ namespace Microsoft.eShopWeb.Web.Controllers
     [Route("[controller]/[action]")]
     public class OrderController : Controller
     {
-        private readonly IOrderRepository _orderRepository;
+        private readonly IAsyncRepository<Order> _orderRepository;
 
-        public OrderController(IOrderRepository orderRepository) {
+        public OrderController(IAsyncRepository<Order> orderRepository) {
             _orderRepository = orderRepository;
         }
         
