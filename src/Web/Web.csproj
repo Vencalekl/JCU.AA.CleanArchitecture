@@ -16,6 +16,10 @@
 		<Folder Include="wwwroot\fonts\" />
 	</ItemGroup>
 	<ItemGroup>
+		<ProjectReference Include="..\ApplicationCore\ApplicationCore.csproj" />
+		<ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+	</ItemGroup>
+	<ItemGroup>
 		<None Include="wwwroot\images\products\1.png" />
 		<None Include="wwwroot\images\products\10.png" />
 		<None Include="wwwroot\images\products\11.png" />
